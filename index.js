@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.route('https://crm-deploy-wheat.vercel.app/test',async (req, res) => {
+app.get('https://crm-deploy-wheat.vercel.app/test',async (req, res) => {
 
     res.json("test api ");
 })
